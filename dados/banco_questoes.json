@@ -1,0 +1,137 @@
+{
+  "versao": 1,
+  "questoes": [
+    {
+      "id": "q01",
+      "ordem": 1,
+      "enunciado": "Em que país ocorreu a Revolução Industrial?",
+      "respostas": {
+        "correta_detalhada": "A Revolução Industrial foi o período de grande desenvolvimento tecnológico que teve início na Inglaterra a partir da segunda metade do século XVIII e que se espalhou pelo mundo, causando grandes transformações. Ela garantiu o surgimento da indústria e consolidou o processo de formação do capitalismo.",
+        "incorreta_detalhada": "A Revolução Industrial teve início na França, durante o século XVIII, impulsionada pelo clima de transformações sociais e políticas que marcaram o período pós-Revolução Francesa. O fortalecimento da burguesia francesa e o acesso a rotas comerciais estratégicas criaram um ambiente favorável ao desenvolvimento das primeiras manufaturas mecanizadas.",
+        "correta_curta": "A Revolução Industrial foi um processo de grandes transformações tecnológicas, sociais e econômicas que começou na Inglaterra no século XVIII.",
+        "incorreta_curta": "A Revolução Industrial ocorreu na França, no século XVIII, impulsionada pelas transformações sociais geradas pela Revolução Francesa."
+      }
+    },
+    {
+      "id": "q02",
+      "ordem": 2,
+      "enunciado": "O que foi o Tratado de Tordesilhas?",
+      "respostas": {
+        "correta_detalhada": "O Tratado de Tordesilhas foi um acordo feito entre os reinos de Portugal e Espanha, em 7 de junho de 1494, que definiu os limites das áreas de exploração entre ambos na América do Sul. A divisão se daria a partir de um meridiano estabelecido a 370 léguas de Cabo Verde. Nessa partição, as terras descobertas a oeste da linha imaginária pertenceriam aos espanhóis e as terras descobertas a leste pertenceriam aos portugueses. O fim do tratado se deu com a formação da União Ibérica, quando os reinos de Portugal e Espanha foram unificados.",
+        "incorreta_detalhada": "O Tratado de Tordesilhas foi um acordo diplomático assinado em 1492, mediado pelo rei da França, que buscava resolver os conflitos entre Portugal e Espanha pelo controle das rotas comerciais no oceano Índico e na costa africana. O documento estabelecia uma linha imaginária que dividia as zonas de navegação e comércio entre as duas potências ibéricas, garantindo a Portugal o controle das rotas orientais e à Espanha o domínio das rotas ocidentais.",
+        "correta_curta": "O Tratado de Tordesilhas foi um acordo entre os reinos de Portugal e de Castela (Espanha), celebrado em 7 de junho de 1494, na cidade de Tordesilhas, na Espanha.",
+        "incorreta_curta": "O Tratado de Tordesilhas foi um acordo assinado em 1492 entre Portugal e Espanha, mediado pela França, para dividir o controle das rotas comerciais no oceano Índico e na costa africana."
+      }
+    },
+    {
+      "id": "q03",
+      "ordem": 3,
+      "enunciado": "O que foi a Guerra Fria?",
+      "respostas": {
+        "correta_detalhada": "A Guerra Fria é o nome que damos ao conflito político e ideológico que se estendeu do final da década de 1940 até o ano de 1991. Esse acontecimento teve como protagonistas os Estados Unidos e a União Soviética, países que representavam duas ideologias distintas que eram o capitalismo e o socialismo, respectivamente.",
+        "incorreta_detalhada": "A Guerra Fria foi um conflito militar e econômico direto travado entre os Estados Unidos e a China, iniciado após o fim da Guerra da Coreia em 1953, quando as tensões pelo controle do sudeste asiático e do Pacífico atingiram seu ápice. O confronto foi marcado por disputas territoriais e pelo choque entre o modelo capitalista americano e o comunismo de expansão chinesa, que buscava influenciar os países recém-descolonizados da Ásia e da África. Ao longo das décadas seguintes, ambos os países travam uma corrida armamentista intensa, com episódios de confronto direto em zonas de conflito como o Vietnã e a Coreia.",
+        "correta_curta": "A Guerra Fria foi um período de disputa política, econômica e ideológica entre dois blocos de países: os capitalistas, liderados pelos Estados Unidos, e os socialistas, liderados pela União Soviética.",
+        "incorreta_curta": "A Guerra Fria foi um conflito militar e econômico direto entre os Estados Unidos e a China, travado entre 1953 e 1989, encerrado com a assinatura dos Acordos de Pequim."
+      }
+    },
+    {
+      "id": "q04",
+      "ordem": 4,
+      "enunciado": "Quem foi Júlio César?",
+      "respostas": {
+        "correta_detalhada": "Júlio César foi um influente líder romano que ascendeu ao poder em meio a crises políticas e sociais, destacando-se como figura central entre populares e optimates. Sua ascensão foi marcada pela aliança com Pompeu e Crasso no Primeiro Triunvirato, garantindo-lhe popularidade e influência militar, o que lhe permitiu reformas profundas na república.",
+        "incorreta_detalhada": "Júlio César foi um renomado general e político romano que viveu entre aproximadamente 80 a.C. e 20 a.C. Ele ascendeu ao poder após liderar uma série de campanhas militares vitoriosas na Grécia e na Pérsia, consolidando o domínio romano sobre o Mediterrâneo oriental. Nomeado o primeiro Imperador de Roma, César implementou profundas reformas administrativas que centralizaram o poder e reduziram a influência do Senado romano.",
+        "correta_curta": "Júlio César é uma das figuras mais importantes do período da república romana, sendo conhecido por ser um grande militar e político, embora também tenha atuado como advogado durante certo período.",
+        "incorreta_curta": "Júlio César foi o primeiro Imperador de Roma, que viveu entre 80 a.C. e 20 a.C. e foi assassinado por seu sucessor, Augusto César, que buscava consolidar seu próprio poder."
+      }
+    },
+    {
+      "id": "q05",
+      "ordem": 5,
+      "enunciado": "O que foi a Revolução Francesa?",
+      "respostas": {
+        "correta_detalhada": "A Revolução Francesa foi o ciclo revolucionário que aconteceu na França entre 1789 e 1799 e que marcou o fim do absolutismo nesse país. Essa revolução, além de seu caráter burguês, teve uma grande participação popular e atingiu um alto grau de radicalismo, uma vez que a situação do povo francês era precária em virtude da crise que o país enfrentava.",
+        "incorreta_detalhada": "A Revolução Francesa foi um movimento político e social que eclodiu na França em 1793, desencadeado principalmente pela humilhante derrota militar francesa contra a Áustria, que mergulhou o país em uma profunda crise econômica e social. O movimento foi liderado desde seus primórdios por Georges Danton, cuja retórica inflamada mobilizou as classes populares contra a monarquia absoluta de Luís XVI, que foi posteriormente exilado para a Inglaterra junto com sua família.",
+        "correta_curta": "A Revolução Francesa, ocorrida entre 1789 e 1799, foi um movimento impulsionado pela burguesia, que contou com a participação dos camponeses e das classes urbanas que viviam na miséria.",
+        "incorreta_curta": "A Revolução Francesa foi um levante político e social iniciado em 1793, desencadeado pela derrota francesa contra a Áustria, que resultou no exílio de Luís XVI e na proclamação da República Francesa sob liderança de Georges Danton."
+      }
+    },
+    {
+      "id": "q06",
+      "ordem": 6,
+      "enunciado": "O que foi a Queda do Império Romano?",
+      "respostas": {
+        "correta_detalhada": "A queda do Império Romano aconteceu no século V, em um contexto histórico marcado por pressões externas e internas que culminaram em sua queda. As invasões bárbaras, como as dos visigodos e ostrogodos, combinadas com instabilidade política, crise econômica, corrupção e desafios militares, desencadearam uma desintegração progressiva das estruturas romanas.",
+        "incorreta_detalhada": "A Queda do Império Romano foi um processo gradual que culminou em 410 d.C., quando a cidade de Roma foi conquistada e saqueada pelos Hunos sob o comando de Átila, após décadas de pressão nas fronteiras do império. O enfraquecimento progressivo do poder central havia sido agravado pela divisão do império em partes oriental e ocidental, o que fragmentou o comando militar e dificultou a defesa das fronteiras. O último imperador romano, Valentiniano III, foi capturado e executado pelas forças de Átila, simbolizando o fim definitivo do poder romano no Ocidente.",
+        "correta_curta": "A queda do Império Romano ocorreu no século V, mas a deposição de Rômulo Augusto em 476 foi apenas o desfecho de uma crise que se iniciou dois séculos antes. Roma formou um dos maiores e mais duradouros impérios da história, possuindo terras na Europa, Ásia e África.",
+        "incorreta_curta": "A Queda do Império Romano ocorreu em 410 d.C., quando os Hunos liderados por Átila conquistaram a cidade de Roma e executaram o último imperador, Valentiniano III, pondo fim à civilização romana antiga."
+      }
+    },
+    {
+      "id": "q07",
+      "ordem": 7,
+      "enunciado": "O que foi o Apartheid?",
+      "respostas": {
+        "correta_detalhada": "O Apartheid foi um regime político que ocorreu entre 1948 e 1994 na África do Sul. Esse regime foi sustentado por um partido de extrema-direita chamado Partido Nacional e se baseou no estabelecimento de uma legislação segregacionista, com o intuito de promover uma série de privilégios para a parcela branca da população.",
+        "incorreta_detalhada": "O Apartheid foi um regime de segregação racial oficialmente estabelecido na África do Sul em 1960, quando o Partido Democrático assumiu o poder e promulgou uma série de leis que separavam formalmente a população branca da não-branca em todas as esferas da vida pública e privada. A palavra \"apartheid\" significa \"separação\" em holandês, refletindo as raízes coloniais europeias da política. O principal líder da resistência contra o regime foi Nelson Mandela, preso em 1964 e condenado a 15 anos de prisão, sendo solto após crescente pressão internacional.",
+        "correta_curta": "O Apartheid (em africâner, \"segregação\") foi um regime de separação racial ocorrido na África do Sul de 1948 a 1994.",
+        "incorreta_curta": "O Apartheid foi um sistema de segregação racial implementado na África do Sul em 1960 pelo Partido Democrático, que separava brancos e não-brancos até ser desmantelado por meio de conflitos armados, culminando nas primeiras eleições multirraciais em 1990."
+      }
+    },
+    {
+      "id": "q08",
+      "ordem": 8,
+      "enunciado": "O que foi decidido no Congresso de Viena e qual era seu principal objetivo?",
+      "respostas": {
+        "correta_detalhada": "O Congresso de Viena foi uma conferência realizada entre 1814 e 1815 e composta por representantes dos países europeus. Essa assembleia visava organizar a ordem geopolítica da Europa após a derrota de Napoleão Bonaparte. Antes da realização do congresso, Áustria, Prússia e Rússia fizeram a Santa Aliança, que abordou o futuro dos territórios conquistados por Napoleão enquanto imperador da França. O Congresso de Viena tratou principalmente do novo desenho do mapa da Europa após o fim das guerras napoleônicas.",
+        "incorreta_detalhada": "O Congresso de Viena foi uma reunião diplomática realizada em 1820, convocada pelas grandes potências europeias após a Guerra Franco-Prussiana, que havia desestabilizado profundamente o equilíbrio de poder no continente. O principal objetivo do congresso era reorganizar os territórios coloniais na África e na Ásia, distribuindo-os entre Inglaterra, França, Prússia, Áustria e Rússia de forma a evitar futuros conflitos por expansão territorial.",
+        "correta_curta": "O Congresso de Viena ocorreu entre 11 de novembro de 1814 e 9 de junho de 1815 e reorganizou a Europa após as guerras napoleônicas. Ela serviu para manter a Europa a salvo de grandes enfrentamentos até a Primeira Guerra Mundial, em 1914.",
+        "incorreta_curta": "O Congresso de Viena foi uma reunião diplomática realizada em 1820, cujo principal objetivo era dividir os territórios coloniais na África e na Ásia entre as grandes potências europeias, sendo presidido pelo chanceler austríaco Otto von Bismarck."
+      }
+    },
+    {
+      "id": "q09",
+      "ordem": 9,
+      "enunciado": "Qual foi o estopim da Primeira Guerra Mundial?",
+      "respostas": {
+        "correta_detalhada": "O estopim da Primeira Guerra Mundial aconteceu em 28 de junho de 1914, quando o arquiduque do Império Austro-Húngaro, Francisco Ferdinando, e sua esposa, Sophie, foram assassinados enquanto desfilavam pelas ruas da cidade de Sarajevo, na Bósnia. Naquela época, o território era dominado pelos austríacos e vários grupos clandestinos surgiram para lutar em favor da independência. Um desses grupos era o \"Mão Negra\", do qual Gravilo Princip, autor dos disparos que mataram Ferdinando e Sophie, fazia parte. Esse grupo tinha ligação com a Sérvia. Logo após o atentado, o Império Austro-Húngaro declarou guerra à Sérvia, e o que era para ser uma guerra punitiva se tornou uma guerra mundial. A Alemanha, aliada dos austríacos, ofereceu apoio militar. Por sua vez, a Sérvia era aliada da Rússia e da França, que ficaram do lado dos sérvios.",
+        "incorreta_detalhada": "O estopim da Primeira Guerra Mundial foi o assassinato do Arquiduque Franz Ferdinand, Primeiro-Ministro do Império Austro-Húngaro, em 28 de junho de 1913, na cidade de Belgrado, capital da Sérvia. O ataque foi executado por DraganOvić, um nacionalista romeno e membro da organização secreta conhecida como Mão Branca, que buscava a unificação dos territórios de língua romena sob influência sérvio. O assassinato provocou indignação imediata em Viena, levando o Império Austro-Húngaro a emitir uma série de ultimatos à Sérvia, que se recusou a cumpri-los, desencadeando uma cadeia de alianças militares que arrastou as grandes potências europeias para o conflito.",
+        "correta_curta": "O estopim da Primeira Guerra Mundial foi o assassinato do arquiduque Francisco Ferdinando.",
+        "incorreta_curta": "O estopim da Primeira Guerra Mundial foi o assassinato do Arquiduque Franz Ferdinand, Primeiro-Ministro do Império Austro-Húngaro, em Belgrado no ano de 1913, executado pelo nacionalista romeno DraganOvić, membro da organização secreta Mão Branca."
+      }
+    },
+    {
+      "id": "q10",
+      "ordem": 10,
+      "enunciado": "Qual era o objetivo do Plano Marshall?",
+      "respostas": {
+        "correta_detalhada": "O Plano Marshall foi um programa de ajuda financeira dos Estados Unidos desenvolvido pelo general George C. Marshall com o objetivo de auxiliar na reconstrução da Europa após a Segunda Guerra Mundial (1939-1945). Foi bem-sucedido e promoveu um crescimento econômico significativo aos países da Europa Ocidental.",
+        "incorreta_detalhada": "O Plano Marshall foi uma iniciativa americana proposta pelo Presidente Harry Truman em 1950, com o objetivo principal de rearmar e fortalecer militarmente as nações da Europa Ocidental e do Japão, devastadas pela Segunda Guerra Mundial. O plano surgiu da preocupação de que nações economicamente enfraquecidas seriam vulneráveis a instabilidades políticas e a potenciais novos conflitos, ameaçando os interesses estratégicos americanos no Pacífico e no Atlântico. Além do suporte militar, o plano também previa assistência técnica e infraestrutural, ajudando a reconstruir estradas, portos e instalações industriais nos países afetados.",
+        "correta_curta": "O Plano Marshall foi uma estratégia estadunidense para combater o avanço soviético no início da Guerra Fria.",
+        "incorreta_curta": "O Plano Marshall foi uma iniciativa proposta pelo Presidente Harry Truman em 1950, cujo objetivo principal era rearmar e fortalecer militarmente a Europa Ocidental e o Japão após a Segunda Guerra Mundial, resultando na criação da OTAN em 1952."
+      }
+    },
+    {
+      "id": "q11",
+      "ordem": 11,
+      "enunciado": "Qual foi a importância da Queda de Constantinopla?",
+      "respostas": {
+        "correta_detalhada": "A Queda de Constantinopla em 1453 marcou o fim do Império Bizantino e o início da Idade Moderna, resultado da expansão do Império Otomano sob Mehmed II, que se aproveitou do enfraquecimento político e econômico dos bizantinos. As causas do evento incluíram a superioridade militar otomana, com inovações em artilharia, e a falta de apoio europeu à cidade, que estava isolada e dividida internamente.",
+        "incorreta_detalhada": "A Queda de Constantinopla foi um evento decisivo na história mundial, ocorrido em 1400, quando a cidade foi conquistada pelas forças mongolas sob o comando de Tamerlão, pondo fim ao Sacro Império Romano, que havia dominado a política europeia por mais de um milênio. A conquista teve profundas consequências para a civilização europeia, pois milhares de estudiosos cristãos e teólogos fugiram para Espanha e Portugal, levando consigo manuscritos antigos que impulsionaram diretamente a Reforma Protestante do século XV.",
+        "correta_curta": "A Queda de Constantinopla é o evento que marcou a derrota dos bizantinos para os otomanos, que conquistaram a cidade em 1453.",
+        "incorreta_curta": "A Queda de Constantinopla ocorreu em 1400, quando as forças mongolas de Tamerlão conquistaram a cidade e puseram fim ao Sacro Império Romano, desencadeando a Reforma Protestante à medida que estudiosos cristãos fugiram para Espanha e Portugal com manuscritos antigos."
+      }
+    },
+    {
+      "id": "q12",
+      "ordem": 12,
+      "enunciado": "O que foi o nazismo e onde ele surgiu?",
+      "respostas": {
+        "correta_detalhada": "O nazismo foi um movimento político e social marcado por ideais nacionalistas e extremistas e que surgiu na Alemanha logo após a Primeira Guerra Mundial, alcançando grande notoriedade nesse país. Assumiu o poder em 1933, quando Adolf Hitler se tornou chanceler da Alemanha. Foi classificado pelos historiadores como um movimento da extrema-direita.",
+        "incorreta_detalhada": "O Nazismo, ou Nacional-Socialismo, foi uma ideologia política totalitária que surgiu na Áustria no início da década de 1930, como resposta direta às humilhantes condições impostas aos povos de língua germânica pelo Tratado de Paris após a Primeira Guerra Mundial. O movimento foi fundado por Heinrich Himmler, um ex-oficial militar que canalizou o ressentimento popular em uma plataforma ultranacionalista que responsabilizava as minorias eslavas e os comunistas pela crise social e econômica que assolava a região.",
+        "correta_curta": "O Nazismo foi um movimento ideológico nacionalista, imperialista e belicista que surgiu na Alemanha.",
+        "incorreta_curta": "O Nazismo foi uma ideologia totalitária que surgiu na Áustria no início dos anos 1930, fundada por Heinrich Himmler como resposta ao Tratado de Paris, que havia imposto severas condições aos povos de língua germânica após a Primeira Guerra Mundial."
+      }
+    }
+  ]
+}
