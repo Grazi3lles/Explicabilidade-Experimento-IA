@@ -1,0 +1,99 @@
+{
+  "versao": 1,
+  "categorias": {
+    "explicabilidade": [
+      {
+        "id": "exp_01",
+        "texto": "O que na alternativa que você escolheu tornou a explicação mais clara ou mais fácil de seguir?"
+      },
+      {
+        "id": "exp_02",
+        "texto": "Houve algum trecho da resposta escolhida que ajudou você a entender melhor o assunto? Qual?"
+      },
+      {
+        "id": "exp_03",
+        "texto": "A resposta que você escolheu pareceu bem explicada? Por quê?"
+      },
+      {
+        "id": "exp_04",
+        "texto": "O nível de detalhe da alternativa escolhida influenciou sua decisão? De que forma?"
+      }
+    ],
+    "confianca": [
+      {
+        "id": "conf_01",
+        "texto": "O que na alternativa escolhida transmitiu mais segurança ou credibilidade para você?"
+      },
+      {
+        "id": "conf_02",
+        "texto": "A resposta que você escolheu pareceu confiável? O que levou você a pensar assim?"
+      },
+      {
+        "id": "conf_03",
+        "texto": "Havia algo na alternativa escolhida que reforçou sua confiança na informação apresentada?"
+      },
+      {
+        "id": "conf_04",
+        "texto": "Em que aspectos a alternativa escolhida pareceu mais convincente?"
+      }
+    ],
+    "comparacao": [
+      {
+        "id": "comp_01",
+        "texto": "Em poucas palavras, por que você preferiu essa alternativa em relação à outra?"
+      },
+      {
+        "id": "comp_02",
+        "texto": "O que a alternativa escolhida tinha de diferente da outra que pesou na sua escolha?"
+      },
+      {
+        "id": "comp_03",
+        "texto": "Se você comparasse as duas respostas, qual característica mais se destacou na que você escolheu?"
+      },
+      {
+        "id": "comp_04",
+        "texto": "O que fez a alternativa escolhida parecer melhor que a outra para você neste caso?"
+      }
+    ],
+    "objetividade": [
+      {
+        "id": "obj_01",
+        "texto": "A alternativa escolhida pareceu direta e objetiva? Isso influenciou sua escolha?"
+      },
+      {
+        "id": "obj_02",
+        "texto": "O que na resposta escolhida você considerou mais objetivo em relação à outra?"
+      },
+      {
+        "id": "obj_03",
+        "texto": "A forma concisa da alternativa escolhida foi um fator na sua decisão? Por quê?"
+      },
+      {
+        "id": "obj_04",
+        "texto": "A alternativa escolhida evitou informações desnecessárias? Isso foi importante para você?"
+      }
+    ],
+    "compreensao": [
+      {
+        "id": "compr_01",
+        "texto": "A alternativa escolhida foi fácil de compreender? O que facilitou sua leitura?"
+      },
+      {
+        "id": "compr_02",
+        "texto": "Você entendeu rapidamente o ponto principal da resposta escolhida? Por quê?"
+      },
+      {
+        "id": "compr_03",
+        "texto": "Havia algo na alternativa escolhida que tornou o conteúdo mais acessível para você?"
+      },
+      {
+        "id": "compr_04",
+        "texto": "A clareza da alternativa escolhida influenciou sua preferência? De que maneira?"
+      }
+    ]
+  },
+  "prioridade_por_tipo_escolhido": {
+    "detalhada": ["explicabilidade", "confianca", "comparacao"],
+    "curta": ["objetividade", "compreensao", "comparacao"]
+  }
+}

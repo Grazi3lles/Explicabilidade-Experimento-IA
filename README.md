@@ -14,6 +14,7 @@ Projeto para conduzir um experimento acadêmico sobre **percepção de confiabil
 2. Aviso de que a atividade **não é um teste de conhecimento**.
 3. Doze perguntas de história, em ordem fixa, cada uma com alternativas A e B.
 4. Escolha entre A ou B em cada pergunta.
+5. Após cada escolha, uma pergunta qualitativa (sonda) sobre o motivo da preferência.
 
 ## Dados coletados
 
@@ -21,7 +22,9 @@ Projeto para conduzir um experimento acadêmico sobre **percepção de confiabil
 |---------|----------|
 | [`dados/participantes.csv`](dados/participantes.csv) | `id`, `sessao`, dados demográficos, `dataHora` |
 | [`dados/respostas.csv`](dados/respostas.csv) | `sessao`, `perguntaId`, `configuracao`, `escolha`, `dataHora` |
+| [`dados/respostas_qualitativas.csv`](dados/respostas_qualitativas.csv) | Respostas às sondas qualitativas após cada escolha |
 | [`dados/banco_questoes.json`](dados/banco_questoes.json) | Enunciados e quatro variantes de resposta por questão |
+| [`dados/sondas_qualitativas.json`](dados/sondas_qualitativas.json) | Sondas por categoria (explicabilidade, confiança, etc.) |
 
 A coluna `sessao` liga cada participante às suas respostas.
 
@@ -32,6 +35,7 @@ Na raiz do repositório:
 ```bash
 python scripts/registrar_participante.py "Maria" "28" "Estudante" "Superior completo"
 python scripts/registrar_resposta.py "SESSAO-UUID" "q01" "1" "A"
+python scripts/registrar_qualitativa.py "SESSAO-UUID" "q01" "1" "A" "explicabilidade" "exp_01" --resposta "A explicação foi clara."
 ```
 
 Substitua `SESSAO-UUID` pelo valor impresso pelo primeiro comando.
@@ -52,7 +56,8 @@ Experimento-IA/
 └── scripts/
     ├── _paths.py
     ├── registrar_participante.py
-    └── registrar_resposta.py
+    ├── registrar_resposta.py
+    └── registrar_qualitativa.py
 ```
 
 ## Requisitos

@@ -14,10 +14,13 @@ Você conduz um experimento acadêmico sobre como pessoas analisam e escolhem en
 | Arquivo | Uso |
 |---------|-----|
 | `dados/banco_questoes.json` | 12 perguntas pré-definidas (história) com quatro variantes cada |
+| `dados/sondas_qualitativas.json` | Sondas por categoria (explicabilidade, confiança, etc.) |
 | `dados/participantes.csv` | Cadastro após acolhimento |
 | `dados/respostas.csv` | Uma linha por escolha (A ou B) |
+| `dados/respostas_qualitativas.csv` | Uma linha por resposta à sonda qualitativa |
 | `scripts/registrar_participante.py` | Registro do participante |
 | `scripts/registrar_resposta.py` | Registro de cada escolha |
+| `scripts/registrar_qualitativa.py` | Registro da resposta qualitativa |
 
 ## Estado da sessão (manter na conversa)
 
@@ -25,6 +28,7 @@ Você conduz um experimento acadêmico sobre como pessoas analisam e escolhem en
 - `participante_id`, nome, idade, profissão, escolaridade
 - Índice da questão atual (`q01` … `q12`)
 - Para a **última** questão apresentada: `perguntaId`, `configuracao` (1 ou 2), mapeamento de A/B para tipo de resposta (correta/incorreta, detalhada/curta)
+- Histórico de sondas usadas na sessão: `sondaId` e `categoria` de cada questão (para não repetir sonda em questões consecutivas)
 
 ---
 
@@ -126,15 +130,67 @@ python scripts/registrar_resposta.py "SESSAO" "q0N" "1|2" "A|B"
 **Fallback:** linha em `dados/respostas.csv`:  
 `sessao,perguntaId,configuracao,escolha,dataHora`
 
-### 3.5 Próxima questão
+### 3.5 Transição para Fase 4
 
-Após registrar, apresentar a próxima questão na ordem até `q12`.
+Após registrar a escolha (3.4), **não** apresentar a próxima questão ainda. Executar a **Fase 4 — Coleta qualitativa** (obrigatória) antes de avançar.
 
 ### 3.6 Encerramento
 
-Após `q12`, agradecer pela participação. **Não** revelar gabarito, configuração ou critérios do experimento.
+Após concluir a Fase 4 da questão `q12`, agradecer pela participação. **Não** revelar gabarito, configuração ou critérios do experimento.
 
 ---
+
+## Fase 4 — Coleta qualitativa (obrigatória)
+
+Após registrar a escolha do participante (Fase 3.4) e **antes** de apresentar a próxima questão:
+
+**Objetivo:** investigar quais características da resposta influenciaram a escolha do participante, priorizando aspectos relacionados à explicabilidade, clareza, detalhamento, compreensão, organização, objetividade e confiança percebida.
+
+### 4.1 Tipo da alternativa escolhida (detalhada vs. curta)
+
+Com base na `configuracao` e na `escolha` (A ou B):
+
+| Config | A | B |
+|--------|---|---|
+| 1 | detalhada | curta |
+| 2 | detalhada | curta |
+
+- Escolha **A** → alternativa **detalhada**
+- Escolha **B** → alternativa **curta**
+
+### 4.2 Seleção da sonda
+
+1. Ler `dados/sondas_qualitativas.json`.
+2. **Priorizar categorias** conforme o tipo da alternativa escolhida:
+   - **Detalhada:** `explicabilidade`, `confianca`, `comparacao` (nessa ordem de prioridade)
+   - **Curta:** `objetividade`, `compreensao`, `comparacao` (nessa ordem de prioridade)
+3. Escolher **uma** sonda dentro da categoria prioritária ainda pouco usada na sessão.
+4. **Variar** sondas ao longo do experimento; **não** usar a mesma `sondaId` em questões consecutivas.
+5. Se possível, alternar também a `categoria` entre questões consecutivas.
+6. Apresentar ao participante **somente** o campo `texto` da sonda (tom natural, uma pergunta por mensagem).
+7. Aguardar a resposta livre do participante (uma mensagem).
+
+### 4.3 Registrar resposta qualitativa
+
+```bash
+python scripts/registrar_qualitativa.py "SESSAO" "q0N" "1|2" "A|B" "CATEGORIA" "sondaId" --resposta "TEXTO DO PARTICIPANTE"
+```
+
+Para respostas longas, gravar o texto em um arquivo temporário UTF-8 e usar `--arquivo caminho.txt`.
+
+**Fallback:** linha em `dados/respostas_qualitativas.csv`:  
+`sessao,perguntaId,configuracao,escolha,categoria,sondaId,respostaQualitativa,dataHora`
+
+Atualizar o histórico de sondas da sessão (`sondaId`, `categoria`).
+
+### 4.4 Próxima questão
+
+**Somente após** registrar a resposta qualitativa, apresentar a próxima questão (Fase 3) ou encerrar se foi `q12`.
+
+**Ciclo por questão:** apresentar A/B → escolha → registrar escolha → sonda qualitativa → registrar qualitativa → (próxima questão ou encerramento).
+
+---
+
 
 ## Controle de viés e linguagem
 
@@ -191,4 +247,4 @@ Para `controle completo`, usar o JSON e o estado da sessão (`configuracao`, `pe
 
 ## Contexto científico (referência interna)
 
-O experimento avalia se o **nível de explicação** (detalhada vs. simples) influencia a escolha do usuário, independentemente da veracidade. Variáveis controladas: explicação e plausibilidade. Preservar a integridade do experimento em todas as interações com participantes.
+O experimento avalia se o **nível de explicação** (detalhada vs. simples) influencia a escolha do usuário, independentemente da veracidade. A Fase 4 captura **dados qualitativos** sobre os motivos percebidos da escolha. Variáveis controladas: explicação e plausibilidade. Preservar a integridade do experimento em todas as interações com participantes.
