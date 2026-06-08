@@ -1,99 +1,92 @@
 {
-  "versao": 1,
-  "categorias": {
-    "explicabilidade": [
-      {
-        "id": "exp_01",
-        "texto": "O que na alternativa que você escolheu tornou a explicação mais clara ou mais fácil de seguir?"
-      },
-      {
-        "id": "exp_02",
-        "texto": "Houve algum trecho da resposta escolhida que ajudou você a entender melhor o assunto? Qual?"
-      },
-      {
-        "id": "exp_03",
-        "texto": "A resposta que você escolheu pareceu bem explicada? Por quê?"
-      },
-      {
-        "id": "exp_04",
-        "texto": "O nível de detalhe da alternativa escolhida influenciou sua decisão? De que forma?"
-      }
-    ],
-    "confianca": [
-      {
-        "id": "conf_01",
-        "texto": "O que na alternativa escolhida transmitiu mais segurança ou credibilidade para você?"
-      },
-      {
-        "id": "conf_02",
-        "texto": "A resposta que você escolheu pareceu confiável? O que levou você a pensar assim?"
-      },
-      {
-        "id": "conf_03",
-        "texto": "Havia algo na alternativa escolhida que reforçou sua confiança na informação apresentada?"
-      },
-      {
-        "id": "conf_04",
-        "texto": "Em que aspectos a alternativa escolhida pareceu mais convincente?"
-      }
-    ],
-    "comparacao": [
-      {
-        "id": "comp_01",
-        "texto": "Em poucas palavras, por que você preferiu essa alternativa em relação à outra?"
-      },
-      {
-        "id": "comp_02",
-        "texto": "O que a alternativa escolhida tinha de diferente da outra que pesou na sua escolha?"
-      },
-      {
-        "id": "comp_03",
-        "texto": "Se você comparasse as duas respostas, qual característica mais se destacou na que você escolheu?"
-      },
-      {
-        "id": "comp_04",
-        "texto": "O que fez a alternativa escolhida parecer melhor que a outra para você neste caso?"
-      }
-    ],
-    "objetividade": [
-      {
-        "id": "obj_01",
-        "texto": "A alternativa escolhida pareceu direta e objetiva? Isso influenciou sua escolha?"
-      },
-      {
-        "id": "obj_02",
-        "texto": "O que na resposta escolhida você considerou mais objetivo em relação à outra?"
-      },
-      {
-        "id": "obj_03",
-        "texto": "A forma concisa da alternativa escolhida foi um fator na sua decisão? Por quê?"
-      },
-      {
-        "id": "obj_04",
-        "texto": "A alternativa escolhida evitou informações desnecessárias? Isso foi importante para você?"
-      }
-    ],
-    "compreensao": [
-      {
-        "id": "compr_01",
-        "texto": "A alternativa escolhida foi fácil de compreender? O que facilitou sua leitura?"
-      },
-      {
-        "id": "compr_02",
-        "texto": "Você entendeu rapidamente o ponto principal da resposta escolhida? Por quê?"
-      },
-      {
-        "id": "compr_03",
-        "texto": "Havia algo na alternativa escolhida que tornou o conteúdo mais acessível para você?"
-      },
-      {
-        "id": "compr_04",
-        "texto": "A clareza da alternativa escolhida influenciou sua preferência? De que maneira?"
-      }
-    ]
+  "q01": {
+    "pergunta": "O que mais pesou na sua escolha?",
+    "alternativas": {
+      "A": "Parecia mais confiável",
+      "B": "Tinha mais detalhes e contexto",
+      "C": "Era mais fácil de entender",
+      "D": "O conteúdo pareceu mais correto"
+    }
   },
-  "prioridade_por_tipo_escolhido": {
-    "detalhada": ["explicabilidade", "confianca", "comparacao"],
-    "curta": ["objetividade", "compreensao", "comparacao"]
+  "q02": {
+    "pergunta": "O que te fez preferir essa resposta?",
+    "alternativas": {
+      "A": "Era mais direta e objetiva",
+      "B": "Não tinha informações desnecessárias",
+      "C": "O conteúdo pareceu mais preciso",
+      "D": "Foi mais fácil de absorver rapidamente"
+    }
+  },
+  "q03": {
+    "pergunta": "Por que essa alternativa se destacou?",
+    "alternativas": {
+      "A": "O conteúdo pareceu mais verdadeiro",
+      "B": "Era mais clara e bem estruturada",
+      "C": "Transmitiu mais credibilidade",
+      "D": "Era mais objetiva"
+    }
+  },
+  "q04": {
+    "pergunta": "O que mais influenciou sua decisão?",
+    "alternativas": {
+      "A": "O nível de detalhe transmitiu segurança",
+      "B": "Parecia mais completa e aprofundada",
+      "C": "O conteúdo pareceu correto",
+      "D": "Era mais fácil de compreender"
+    }
+  },
+  "q05": {
+    "pergunta": "O que chamou sua atenção nessa alternativa?",
+    "alternativas": {
+      "A": "As datas e fatos pareceram precisos",
+      "B": "Era mais objetiva e direta",
+      "C": "Transmitiu mais confiança",
+      "D": "Foi mais fácil de entender"
+    }
+  },
+  "q06": {
+    "pergunta": "Por que você preferiu essa resposta?",
+    "alternativas": {
+      "A": "O conteúdo pareceu mais correto",
+      "B": "Tinha mais detalhes e contexto",
+      "C": "Era mais clara e organizada",
+      "D": "Transmitiu mais credibilidade"
+    }
+  },
+  "q07": {
+    "pergunta": "O que mais pesou na sua escolha?",
+    "alternativas": {
+      "A": "Era mais concisa e direta",
+      "B": "Não tinha informações em excesso",
+      "C": "Foi mais fácil de absorver",
+      "D": "O conteúdo pareceu mais completo"
+    }
+  },
+  "q08": {
+    "pergunta": "O que te convenceu nessa alternativa?",
+    "alternativas": {
+      "A": "As datas e fatos pareceram mais precisos",
+      "B": "Era mais detalhada e aprofundada",
+      "C": "Transmitiu mais confiança",
+      "D": "Era mais objetiva e direta"
+    }
+  },
+  "q09": {
+    "pergunta": "Por que essa resposta se destacou?",
+    "alternativas": {
+      "A": "Era mais direta e objetiva",
+      "B": "O conteúdo pareceu mais correto",
+      "C": "Não tinha informações desnecessárias",
+      "D": "Foi mais fácil de entender rapidamente"
+    }
+  },
+  "q10": {
+    "pergunta": "O que mais influenciou sua escolha?",
+    "alternativas": {
+      "A": "O nível de detalhe transmitiu segurança",
+      "B": "O conteúdo pareceu mais correto",
+      "C": "Era mais clara e bem estruturada",
+      "D": "Transmitiu mais credibilidade"
+    }
   }
 }

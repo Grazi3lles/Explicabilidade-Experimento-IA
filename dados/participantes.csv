@@ -1,3 +1,1 @@
-id,sessao,nome,idade,profissao,escolaridade,dataHora
-7616dd5f-05a9-47d3-bdd1-afe19c9af823,7169d98e-1a32-47ec-a707-9e0287497287,Grazi,21,Estagiaria,Ensino medio,2026-05-31T22:47:31.134172
-46022d0d-2e96-434a-b6bb-e3ebe2278795,8dfe68a8-c4e0-4729-af91-432996510bcc,Gustavo,27,Desenvolvedor Full Stack,Ensino Superior Incompleto,2026-06-05T16:40:34.557317
+session_id,nome,data_hora
