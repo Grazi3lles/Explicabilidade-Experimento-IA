@@ -1,9 +1,32 @@
 import argparse
 import csv
+import json
+import sys
 from datetime import datetime
-from pathlib import Path
 
-from _paths import RESPOSTAS_QUALITATIVAS_CSV
+from _paths import RESPOSTAS_QUALITATIVAS_CSV, SONDAS_QUALITATIVAS_JSON
+
+
+def carregar_texto_alternativa(pergunta_id: str, escolha_sonda: str) -> str:
+    sondas = json.loads(SONDAS_QUALITATIVAS_JSON.read_text(encoding="utf-8"))
+    sonda = sondas.get(pergunta_id)
+    if sonda is None:
+        print(
+            f"erro: sonda não encontrada para {pergunta_id!r} em {SONDAS_QUALITATIVAS_JSON}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    alternativas = sonda.get("alternativas", {})
+    texto = alternativas.get(escolha_sonda)
+    if texto is None:
+        print(
+            f"erro: alternativa {escolha_sonda!r} não encontrada na sonda {pergunta_id!r}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    return texto
 
 
 def registrar(
@@ -11,8 +34,7 @@ def registrar(
     pergunta_id: str,
     configuracao: str,
     escolha: str,
-    categoria: str,
-    sonda_id: str,
+    escolha_sonda: str,
     resposta_qualitativa: str,
 ) -> None:
     data_hora = datetime.now().isoformat()
@@ -32,8 +54,7 @@ def registrar(
                     "perguntaId",
                     "configuracao",
                     "escolha",
-                    "categoria",
-                    "sondaId",
+                    "escolhaSonda",
                     "respostaQualitativa",
                     "dataHora",
                 ]
@@ -44,8 +65,7 @@ def registrar(
                 pergunta_id,
                 configuracao,
                 escolha,
-                categoria,
-                sonda_id,
+                escolha_sonda,
                 resposta_qualitativa,
                 data_hora,
             ]
@@ -60,33 +80,17 @@ def main() -> None:
     parser.add_argument("perguntaId")
     parser.add_argument("configuracao", choices=["1", "2"])
     parser.add_argument("escolha", choices=["A", "B"])
-    parser.add_argument("categoria")
-    parser.add_argument("sondaId")
-    parser.add_argument(
-        "--resposta",
-        help="Texto da resposta qualitativa do participante.",
-    )
-    parser.add_argument(
-        "--arquivo",
-        type=Path,
-        help="Arquivo UTF-8 com a resposta qualitativa (preferível para textos longos).",
-    )
+    parser.add_argument("escolhaSonda", choices=["A", "B", "C", "D"])
     args = parser.parse_args()
 
-    if args.arquivo:
-        resposta = args.arquivo.read_text(encoding="utf-8").strip()
-    elif args.resposta:
-        resposta = args.resposta.strip()
-    else:
-        parser.error("Informe --resposta ou --arquivo.")
+    resposta = carregar_texto_alternativa(args.perguntaId, args.escolhaSonda)
 
     registrar(
         args.sessao,
         args.perguntaId,
         args.configuracao,
         args.escolha,
-        args.categoria,
-        args.sondaId,
+        args.escolhaSonda,
         resposta,
     )
     print("ok")
